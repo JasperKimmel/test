@@ -8,7 +8,12 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-
+  - type: input
+    id: short_description
+    attributes:
+      label: Short description of your bug
+      description: A short description of your bug, like an emails subject.
+      placeholder: ex. Error 10007 when running app.
   - type: input
     id: contact
     attributes:
