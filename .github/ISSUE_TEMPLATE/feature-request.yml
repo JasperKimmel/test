@@ -1,0 +1,31 @@
+name: Feature Request
+description: Request for new features.
+title: "[FEATURE]: "
+labels: ["enhancement"]
+assignees: ["JasperKimmel"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Great ideas are always welcome! Please use this template to suggest new features or improvements to our app. The more details you provide, the better we can understand and evaluate your request.
+  - type: input
+    id: description
+    attributes:
+      label: Description
+      description: Tell us about your idea.
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Your name
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com / +31 612345678
+    validations:
+      required: false
