@@ -8,6 +8,9 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
+  - type: markdown
+    attributes:
+      value: "## BUG details"
   - type: input
     id: short_description
     attributes:
