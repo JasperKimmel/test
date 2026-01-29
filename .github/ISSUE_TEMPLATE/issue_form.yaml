@@ -22,9 +22,9 @@ body:
       label: How to reproduce the issue
       description: Tell us how to reproduce the behavior.
       placeholder: |
-        Go to 'Settings'
-        Enable/Disable 'Audio Feedback'
-        See error
+        1. Go to 'Settings'
+        2. Enable/Disable 'Audio Feedback'
+        3. See error
     validations:
       required: true
   - type: textarea
@@ -44,13 +44,24 @@ body:
     validations:
       required: false
   - type: dropdown
+    id: platform
+    attributes:
+      label: Mobile platform
+      description: On which mobile platform is our app running?
+      options:
+        - Apple iPhone (iOS)
+        - Apple Watch (WatchOS)
+        - Android
+      multiple: false
+    validations:
+      required: true
+  - type: dropdown
     id: version
     attributes:
       label: Version
       description: What version of our software are you running?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - 1.0.0
       default: 0
     validations:
       required: true
