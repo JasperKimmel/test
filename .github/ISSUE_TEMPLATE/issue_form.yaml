@@ -19,11 +19,11 @@ body:
   - type: textarea
     id: how-to-reproduce
     attributes:
-      label: How to reproduce the issue
-      description: Tell us how to reproduce the behavior.
-      placeholder: Go to 'Settings'
+      label: "How to reproduce the issue"
+      description: "Tell us how to reproduce the behavior."
+      placeholder: "Go to 'Settings'
 Enable/Disable 'Audio Feedback'
-See error
+See error"
     validations:
       required: true
   - type: textarea
