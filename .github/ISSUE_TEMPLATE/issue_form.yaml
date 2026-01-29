@@ -1,6 +1,6 @@
 name: Bug Report
 description: File a bug report.
-title: "[Bug]: [short_description]"
+title: "[Bug]: "
 labels: ["bug", "help wanted"]
 assignees: ["JasperKimmel"]
 body:
@@ -9,11 +9,11 @@ body:
       value: |
         Thanks for taking the time to fill out this bug report!
   - type: input
-    id: short_description
+    id: description
     attributes:
-      label: Short description of the bug
-      description: A short description of your bug, like an emails subject.
-      placeholder: ex. Error 10007 when changing feedback settings.
+      label: What happened?
+      description: Tell us what happened in detail?
+      placeholder: ex. I get error 10007 when changing feedback settings.
     validations:
       required: true
   - type: textarea
