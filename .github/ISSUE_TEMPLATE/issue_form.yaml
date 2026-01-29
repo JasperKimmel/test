@@ -1,6 +1,6 @@
 name: Bug Report
 description: File a bug report.
-title: "[Bug]: "
+title: "[Bug]: [short_description]"
 labels: ["bug", "help wanted"]
 assignees: ["JasperKimmel"]
 body:
@@ -13,18 +13,27 @@ body:
     attributes:
       label: Short description of the bug
       description: A short description of your bug, like an emails subject.
-      placeholder: ex. Error 10007 when running app.
+      placeholder: ex. Error 10007 when changing feedback settings.
     validations:
       required: true
   - type: textarea
-    id: what-happened
+    id: how-to-reproduce
     attributes:
-      label: Describe the bug
-      description: A clear and concise description of what the bug is.
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: How to reproduce the issue
+      description: Tell us how to reproduce the behavior.
+      placeholder: Go to 'Settings'
+Enable/Disable 'Audio Feedback'
+See error
     validations:
       required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: I would expect the app to save the feedback settings withouth any error.
+    validations:
+      required: false     
   - type: input
     id: contact
     attributes:
