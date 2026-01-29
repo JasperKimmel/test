@@ -4,7 +4,7 @@ title: "[Bug]: "
 labels: ["bug", "help wanted"]
 assignees:
   - JasperKimmel
-type: bug
+type: Bug
 body:
   - type: markdown
     attributes:
